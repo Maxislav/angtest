@@ -1,0 +1,57 @@
+body {
+    position: relative;
+}
+
+.button {
+    padding: 5px 10px;
+    background: ghostwhite;
+    border-radius: 3px;
+    border: 1px solid gray;
+    display: inline-block;
+    cursor: pointer;
+}
+.button:active {
+    background: white;
+    color: gray;
+}
+
+div {
+    margin: 10px;
+}
+
+modal {
+    position: absolute;
+    padding: 5px;
+
+    left: 50%;
+    width: 200px;
+    margin-left: -50px;
+}
+
+modal > div {
+    box-shadow: 0 0 5px gray;
+    margin: 10px 0;
+
+
+
+    -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+    -webkit-transition: 0.4s ease-in-out all;
+    -moz-transition: 0.4s ease-in-out all;
+    transition: 0.4s ease-in-out all;
+
+}
+modal > div.fade{
+    opacity: 0.5;
+}
+
+modal input {
+    width: 60%;
+    margin: 10px;
+}
+
+modal .button {
+    padding: 1px 4px;
+    margin: 4px;
+    float: right;
+}
